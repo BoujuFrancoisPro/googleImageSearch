@@ -1,5 +1,5 @@
 {
-  "name": "googleimagesearch",
+  "name": "ggis",
   "version": "1.0.0",
   "description": "Small mmodule to request images from google search",
   "main": "ggis.mjs",
