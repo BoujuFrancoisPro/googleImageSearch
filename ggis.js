@@ -1,8 +1,7 @@
-import querystring from 'querystring';
-import axios from 'axios';
-import { type } from 'os';
+const querystring = require("querystring");
+const axios = require("axios");
 
-export default class GoogleSearch{
+class GoogleSearch{
     constructor(searchEngineID, APIKEY){
         this.searchEngineID = searchEngineID;
         this.APIKEY = APIKEY;
@@ -141,3 +140,5 @@ export default class GoogleSearch{
         return resultNumbers;
     }
 }
+
+module.exports = GoogleSearch;
