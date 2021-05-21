@@ -1,0 +1,16 @@
+{
+  "name": "GGIS",
+  "version": "1.0.0",
+  "description": "Small mmodule to request images from google search",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  }
+}
