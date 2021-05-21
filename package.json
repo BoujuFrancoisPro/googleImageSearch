@@ -1,6 +1,6 @@
 {
   "name": "ggis",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Small mmodule to request images from google search",
   "repository": {
     "type": "git",
