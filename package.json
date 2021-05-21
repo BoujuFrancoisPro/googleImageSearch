@@ -2,7 +2,6 @@
   "name": "ggis",
   "version": "1.1.0",
   "description": "Small mmodule to request images from google search",
-  "main": "ggis.mjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/BoujuFrancoisPro/googleImageSearch.git"
