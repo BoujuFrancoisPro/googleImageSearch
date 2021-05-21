@@ -2,9 +2,9 @@
   "name": "GGIS",
   "version": "1.0.0",
   "description": "Small mmodule to request images from google search",
-  "main": "index.mjs",
+  "main": "ggis.mjs",
   "scripts": {
-    "start": "node index.mjs"
+    "start": "node ggis.mjs"
   },
   "dependencies": {
     "axios": "^0.21.1",
