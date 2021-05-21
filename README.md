@@ -2,7 +2,7 @@
 
 ## Installation 
 
- Comming Soon 
+```npm install ggis```
  
 ## Usage
 
