@@ -67,6 +67,47 @@ The search terms to use for finding images. Identical to those you would use in 
 
 Type: `object`
 
+###### startingPage
+
+Type: `number`<br>
+Default: `1`
+
+Sets the starting page from which you will get result E.g ```{startingPage : 2}``` will skip the results from page 1.
+
+###### nPages
+
+Type: `number`<br>
+Default: `1`
+
+Sets the number of pages you wish to return. Note that 1 page holds 10 results.
+
+
+**See the Google's [API documentation](https://developers.google.com/custom-search/json-api/v1/reference/cse/list#parameters) for the following parameters.**
+
+###### imgType
+
+Type: `string`
+
+The category of images to search. E.g. `face` or `photo`.
+
+###### imgColorType
+
+Type: `string`
+
+The category of color spectrums to search. E.g. `gray` or `color`.
+
+###### imgDominantColor
+
+Type: `string`
+
+The [dominant color](https://designshack.net/articles/graphics/understanding-color-dominant-vs-recessive-colors/) to search for. E.g. `yellow` or `purple`.
+
+###### imgSize
+
+Type: `string`
+
+The size of images to search. E.g. `medium` or `xxlarge`.
+
 ## Set up Google Custom Search Engine
 
 Google deprecated their public Google Images API, so to search for images you need to sign up for Google Custom Search Engine.
