@@ -9,7 +9,7 @@
 **Note**: You'll need to [set up your own Google Custom Search Engine](#set-up-google-custom-search-engine) to execute queries.
 
 ```js
-import client form 'GoogleSearch';
+import client from 'GoogleSearch';
 
 const client = new GoogleSearch('CSE ID', 'API KEY');
 
