@@ -1,4 +1,4 @@
-# Google Image Search
+# ggis - Google Image Search
 
 ## Installation 
 
@@ -9,7 +9,7 @@
 **Note**: You'll need to [set up your own Google Custom Search Engine](#set-up-google-custom-search-engine) to execute queries.
 
 ```js
-import client from 'GoogleSearch';
+const client = require('ggis')
 
 const client = new GoogleSearch('CSE ID', 'API KEY');
 
