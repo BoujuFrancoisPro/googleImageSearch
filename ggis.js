@@ -23,6 +23,8 @@ class GoogleSearch{
             options.startingPage = (typeof options.startingPage !== 'undefined') ? options.startingPage : 1;
         }
         
+        if(typeof query !== "string" || typeof query === "undefined")
+            throw new TypeError ('query expected a string and got a ' + typeof query);
         if(typeof options !== "object" && typeof options !== "undefined")
             throw new TypeError('options expected an object and got a ' + typeof options);
 
