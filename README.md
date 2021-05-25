@@ -9,7 +9,7 @@
 **Note**: You'll need to [set up your own Google Custom Search Engine](#set-up-google-custom-search-engine) to execute queries.
 
 ```js
-const client = require('ggis')
+const GoogleSearch = require('ggis')
 
 const shrek = new GoogleSearch('CSE ID', 'API KEY');
 
