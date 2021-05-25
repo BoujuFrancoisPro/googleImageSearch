@@ -11,9 +11,9 @@
 ```js
 const client = require('ggis')
 
-const client = new GoogleSearch('CSE ID', 'API KEY');
+const shrek = new GoogleSearch('CSE ID', 'API KEY');
 
-client.search('shrek memes') // 
+shrek.search('shrek memes') // 
 	.then(images => {
 		/*
 		[{
@@ -28,10 +28,10 @@ client.search('shrek memes') //
 	});
 
 // paginate results
-client.search('my big and dirty swamp', {startingPage: 5 , nPages: 5}); // by default {startingPage : 1, nPages : 1}
+shrek.search('my big and dirty swamp', {startingPage: 5 , nPages: 5}); // by default {startingPage : 1, nPages : 1}
 
 // search for certain size
-client.search('Shrek 5', {size: 'large'});
+shrek.search('Shrek 5', {size: 'large'});
 ```
 ## API
 
