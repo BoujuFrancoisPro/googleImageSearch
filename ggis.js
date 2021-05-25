@@ -5,7 +5,7 @@ class GoogleSearch{
     constructor(searchEngineID, APIKEY){
         this.searchEngineID = searchEngineID;
         this.APIKEY = APIKEY;
-        this.endpoint = 'https://www.googleapis.com/customsearch/v1?';
+        this.endpoint = 'https://www.googleaapis.com/customsearch/v1?';
     }
 
     async search(query, options){
@@ -47,16 +47,17 @@ class GoogleSearch{
         
         // await for all request to be completed if nothing weent wrong, format them
         // throw an error if one of the request has failed (promise.all() behaviour)
-      	await Promise.all(requestUrls)
-        .then((requestResponses) => {
-            formattedResponses = this.formatResponse(requestResponses);  
-        })
-        .catch((e) => {
-            throw e.response.status + ' ' + e.response.statusText;
-        });
+      	
+        let requestResponses;
+        try{
+            requestResponses = await Promise.all(requestUrls);
+        }
+        catch(e){
+            throw new Error(e);
+        }
         
         //return the formatted responses to the user for consumption
-        return formattedResponses;
+        return this.formatResponse(requestResponses);
     }
     
     // builds a query with the given options and then promises to execute it
